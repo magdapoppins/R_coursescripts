@@ -1,4 +1,4 @@
-origData <- read.csv2('./R_ONTIME.csv', sep = ",", header = TRUE, stringsAsFactors = FALSE)
+origData <- read.csv2('R_ONTIME.csv', sep = ",", header = TRUE, stringsAsFactors = FALSE)
 nrow(origData)
 airports <-c('ATL', 'LAX', 'ORD', 'DFW', 'JFK', 'SFO', 'CLT', 'LAS', 'PHX')
 origData <- subset(origData, DEST %in% airports & ORIGIN %in% airports)
